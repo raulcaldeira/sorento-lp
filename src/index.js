@@ -4,6 +4,8 @@ import './index.css';
 import Header from './components/header/header';
 import Hero from './components/hero/hero';
 import Features from './components/features/features';
+import PromoBanner from './components/promoBanner/promoBanner';
+import Coverage from './components/coverage/coverage';
 import UrgencyBanner from './components/urgencyBanner/urgencyBanner';
 import Footer from './components/footer/footer';
 
@@ -14,6 +16,8 @@ root.render(
     <main>
       <Hero />
       <Features />
+      <PromoBanner />
+      <Coverage />
       <UrgencyBanner />
     </main>
     <Footer />

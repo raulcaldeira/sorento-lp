@@ -61,8 +61,8 @@ function Features() {
             <p className="text-sm text-gray-500 mt-1">lugares com<br />conforto real</p>
           </div>
           <div className="text-center">
-            <p className="text-3xl md:text-4xl font-extrabold text-sorento-navy">2025</p>
-            <p className="text-sm text-gray-500 mt-1">modelo<br />mais recente</p>
+            <p className="text-3xl md:text-4xl font-extrabold text-sorento-navy">4x4</p>
+            <p className="text-sm text-gray-500 mt-1">tração<br />integral</p>
           </div>
         </div>
 

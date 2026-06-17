@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import sorentoHero from '../../images/sorento-hero.jpg';
+import bannerCard from '../../images/banner-sorento-card.gif';
 
 function Hero() {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -44,20 +44,33 @@ function Hero() {
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* Left - Content */}
           <div className="flex-1 text-center">
+            <p className="text-sorento-gold font-semibold text-sm uppercase tracking-wider mb-3">
+              Patrocinador Oficial FIFA World Cup 2026
+            </p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-4">
-              Imponência que{' '}
-              <span className="text-sorento-gold">move você.</span>
+              Chegou o Novo{' '}
+              <span className="text-sorento-gold">Kia Sorento 4x4.</span>
             </h1>
+
+            {/* Pricing */}
+            <div className="mb-5">
+              <p className="text-gray-400 text-base line-through">De R$ 399.990<sup className="text-xs">00</sup></p>
+              <p className="text-white text-2xl sm:text-3xl font-extrabold">
+                Por R$ 359.990<sup className="text-sm font-bold">00</sup>
+              </p>
+              <p className="text-sorento-gold text-sm font-medium mt-1">Economia de R$ 40.000</p>
+            </div>
+
             <p className="text-gray-300 text-lg md:text-xl mb-6 max-w-lg mx-auto">
-              Solicite agora uma cotação exclusiva do Kia Sorento com condições especiais da Gandini.
+              Solicite agora uma cotação exclusiva com condições especiais da Gandini.
             </p>
 
-            {/* Hero Image */}
+            {/* Banner oficial da campanha */}
             <div className="flex justify-center mb-6 lg:mb-0">
               <img
-                src={sorentoHero}
-                alt="Kia Sorento - Imponência que move você"
-                className="w-72 md:w-80 lg:w-96 rounded-xl shadow-2xl ring-1 ring-white/10 object-cover"
+                src={bannerCard}
+                alt="Novo Kia Sorento 4x4 - Patrocinador Oficial FIFA World Cup 2026"
+                className="rounded-xl shadow-2xl ring-1 ring-white/10"
               />
             </div>
           </div>
