@@ -6,18 +6,18 @@ function BannerStrip() {
   return (
     <section className="bg-gray-100 py-8">
       <div className="max-w-content mx-auto px-4 sm:px-6 flex justify-center">
-        <a href="https://www.kia.com.br/sorento" target="_blank" rel="noopener noreferrer" className="w-full max-w-3xl">
+        <div className="w-full max-w-3xl">
           <img
             src={bannerHorizontal}
             alt="Novo Kia Sorento 4x4 - Patrocinador Oficial FIFA World Cup 2026"
-            className="hidden sm:block w-full rounded-lg shadow-card hover:shadow-lg transition-shadow"
+            className="hidden sm:block w-full rounded-lg shadow-card"
           />
           <img
             src={bannerHorizontalSm}
             alt="Novo Kia Sorento 4x4 - Patrocinador Oficial FIFA World Cup 2026"
-            className="sm:hidden w-full rounded-lg shadow-card hover:shadow-lg transition-shadow"
+            className="sm:hidden w-full rounded-lg shadow-card"
           />
-        </a>
+        </div>
       </div>
     </section>
   );

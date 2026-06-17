@@ -13,13 +13,11 @@ function PromoBanner() {
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           {/* Banner tall */}
           <div className="flex-shrink-0">
-            <a href="https://www.kia.com.br/sorento" target="_blank" rel="noopener noreferrer">
-              <img
-                src={bannerTall}
-                alt="Novo Kia Sorento 4x4 - De R$ 399.990 por R$ 359.990"
-                className="rounded-xl shadow-2xl max-w-[250px] mx-auto hover:scale-105 transition-transform"
-              />
-            </a>
+            <img
+              src={bannerTall}
+              alt="Novo Kia Sorento 4x4 - De R$ 399.990 por R$ 359.990"
+              className="rounded-xl shadow-2xl max-w-[250px] mx-auto"
+            />
           </div>
 
           {/* Destaques */}
