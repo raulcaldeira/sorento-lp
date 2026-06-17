@@ -6,6 +6,7 @@ import Hero from './components/hero/hero';
 import Features from './components/features/features';
 import PromoBanner from './components/promoBanner/promoBanner';
 import Coverage from './components/coverage/coverage';
+import BannerStrip from './components/bannerStrip/bannerStrip';
 import UrgencyBanner from './components/urgencyBanner/urgencyBanner';
 import Footer from './components/footer/footer';
 
@@ -18,6 +19,7 @@ root.render(
       <Features />
       <PromoBanner />
       <Coverage />
+      <BannerStrip />
       <UrgencyBanner />
     </main>
     <Footer />

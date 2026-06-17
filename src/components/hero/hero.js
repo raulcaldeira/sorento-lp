@@ -67,11 +67,13 @@ function Hero() {
 
             {/* Banner oficial da campanha */}
             <div className="flex justify-center mb-6 lg:mb-0">
-              <img
-                src={bannerCard}
-                alt="Novo Kia Sorento 4x4 - Patrocinador Oficial FIFA World Cup 2026"
-                className="rounded-xl shadow-2xl ring-1 ring-white/10"
-              />
+              <a href="https://www.kia.com.br/sorento" target="_blank" rel="noopener noreferrer">
+                <img
+                  src={bannerCard}
+                  alt="Novo Kia Sorento 4x4 - Patrocinador Oficial FIFA World Cup 2026"
+                  className="rounded-xl shadow-2xl ring-1 ring-white/10 hover:scale-105 transition-transform"
+                />
+              </a>
             </div>
           </div>
 

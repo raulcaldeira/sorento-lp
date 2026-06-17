@@ -1,8 +1,5 @@
 import React from 'react';
-import bannerHorizontal from '../../images/banner-horizontal.gif';
-import bannerHorizontalSm from '../../images/banner-horizontal-sm.gif';
-import sorentoInterior from '../../images/sorento-interior.jpg';
-import sorento7lugares from '../../images/sorento-7lugares.jpg';
+import bannerTall from '../../images/banner-sorento-tall.gif';
 
 function PromoBanner() {
   const scrollToForm = () => {
@@ -12,59 +9,70 @@ function PromoBanner() {
   return (
     <section className="bg-sorento-dark py-14 md:py-20">
       <div className="max-w-content mx-auto px-4 sm:px-6">
-        {/* Banner horizontal oficial */}
-        <div className="flex justify-center mb-10">
-          <img
-            src={bannerHorizontal}
-            alt="Novo Kia Sorento 4x4 - Patrocinador Oficial FIFA World Cup 2026"
-            className="hidden sm:block w-full max-w-3xl rounded-lg"
-          />
-          <img
-            src={bannerHorizontalSm}
-            alt="Novo Kia Sorento 4x4 - Patrocinador Oficial FIFA World Cup 2026"
-            className="sm:hidden w-full rounded-lg"
-          />
-        </div>
-
-        {/* Gallery */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="relative group overflow-hidden rounded-xl">
-            <img
-              src={sorentoInterior}
-              alt="Interior premium do Kia Sorento - painel digital e volante multifuncional"
-              className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
-              <div>
-                <h3 className="text-white font-bold text-lg">Cockpit digital</h3>
-                <p className="text-gray-300 text-sm">Painel 100% digital com tela curva de 12,3" e multimídia conectada.</p>
-              </div>
-            </div>
+        {/* Content + Banner tall */}
+        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+          {/* Banner tall */}
+          <div className="flex-shrink-0">
+            <a href="https://www.kia.com.br/sorento" target="_blank" rel="noopener noreferrer">
+              <img
+                src={bannerTall}
+                alt="Novo Kia Sorento 4x4 - De R$ 399.990 por R$ 359.990"
+                className="rounded-xl shadow-2xl max-w-[250px] mx-auto hover:scale-105 transition-transform"
+              />
+            </a>
           </div>
 
-          <div className="relative group overflow-hidden rounded-xl">
-            <img
-              src={sorento7lugares}
-              alt="Bancos em couro do Kia Sorento - 7 lugares com conforto real"
-              className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
-              <div>
-                <h3 className="text-white font-bold text-lg">Conforto para 7</h3>
-                <p className="text-gray-300 text-sm">Bancos em couro com ventilação, apoio de braço e porta-copos em todas as fileiras.</p>
+          {/* Destaques */}
+          <div className="flex-1 text-center md:text-left">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+              Equipado para qualquer aventura
+            </h2>
+
+            <div className="space-y-5">
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-sorento-gold/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg className="w-5 h-5 text-sorento-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-white font-semibold">Tração 4x4 inteligente</h3>
+                  <p className="text-gray-400 text-sm">Sistema AWD que distribui torque automaticamente entre os eixos para máxima aderência.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-sorento-gold/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg className="w-5 h-5 text-sorento-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-white font-semibold">Câmbio automático de 8 marchas</h3>
+                  <p className="text-gray-400 text-sm">Transmissão suave e eficiente com modo Sport e troca sequencial no volante.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-sorento-gold/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg className="w-5 h-5 text-sorento-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-white font-semibold">Teto solar panorâmico</h3>
+                  <p className="text-gray-400 text-sm">Abertura elétrica com cortina e iluminação ambiente para uma experiência premium.</p>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        {/* CTA */}
-        <div className="text-center mt-10">
-          <button
-            onClick={scrollToForm}
-            className="bg-sorento-gold text-sorento-dark font-bold px-10 py-4 rounded-xl hover:bg-sorento-gold-dark hover:scale-105 transition-all text-lg shadow-lg cursor-pointer"
-          >
-            Quero minha cotação
-          </button>
+            <button
+              onClick={scrollToForm}
+              className="mt-8 bg-sorento-gold text-sorento-dark font-bold px-10 py-4 rounded-xl hover:bg-sorento-gold-dark hover:scale-105 transition-all text-lg shadow-lg cursor-pointer"
+            >
+              Quero minha cotação
+            </button>
+          </div>
         </div>
       </div>
     </section>
