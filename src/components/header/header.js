@@ -1,6 +1,7 @@
 import React from 'react';
 import logoEditoraGlobo from '../../images/logo-editora-globo.png';
 import logoGlab from '../../images/logo-glab.png';
+import { ReactComponent as LogoKia } from '../../images/logo-kia.svg';
 
 function Header() {
   return (
@@ -11,11 +12,7 @@ function Header() {
           <div className="w-px h-6 bg-gray-300"></div>
           <img src={logoGlab} alt="G.lab" className="h-7 md:h-9" />
         </div>
-        <div className="flex items-center gap-3">
-          <span className="text-sorento-graphite font-bold text-lg md:text-xl tracking-tight">KIA</span>
-          <div className="w-px h-6 bg-gray-300"></div>
-          <span className="text-sorento-navy font-bold text-sm md:text-base">GANDINI</span>
-        </div>
+        <LogoKia className="h-6 md:h-8 text-sorento-graphite" aria-label="Kia" />
       </div>
     </header>
   );

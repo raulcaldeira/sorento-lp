@@ -17,7 +17,7 @@ const features = [
       </svg>
     ),
     title: 'Motor Turbo Diesel',
-    description: 'Motor 2.2 turbodiesel com 202 cv de potência e torque impressionante para qualquer terreno.',
+    description: 'Motor 2.2 turbodiesel com 194 cv de potência e torque impressionante para qualquer terreno.',
   },
   {
     icon: (
@@ -26,7 +26,7 @@ const features = [
       </svg>
     ),
     title: 'Segurança avançada',
-    description: 'Câmera 360°, ponto cego, assistente de faixa e piloto automático adaptativo de série.',
+    description: 'Câmeras 360°, monitor de ponto cego, assistentes de faixa e piloto automático com assistente de congestionamento.',
   },
   {
     icon: (
@@ -35,7 +35,7 @@ const features = [
       </svg>
     ),
     title: 'Condições exclusivas',
-    description: 'Condições exclusivas Gandini com as melhores taxas de financiamento do mercado.',
+    description: 'Condições exclusivas Kia com as melhores taxas de financiamento do mercado.',
   },
 ];
 
@@ -53,7 +53,7 @@ function Features() {
         {/* Stats bar */}
         <div className="flex flex-wrap justify-center gap-8 md:gap-16 mb-12 py-6 border-y border-gray-200">
           <div className="text-center">
-            <p className="text-3xl md:text-4xl font-extrabold text-sorento-navy">202</p>
+            <p className="text-3xl md:text-4xl font-extrabold text-sorento-navy">194</p>
             <p className="text-sm text-gray-500 mt-1">cavalos de<br />potência</p>
           </div>
           <div className="text-center">

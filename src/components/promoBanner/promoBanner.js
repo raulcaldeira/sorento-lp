@@ -46,20 +46,20 @@ function PromoBanner() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-white font-semibold">Câmbio automático de 8 marchas</h3>
-                  <p className="text-gray-400 text-sm">Transmissão suave e eficiente com modo Sport e troca sequencial no volante.</p>
+                  <h3 className="text-white font-semibold">Câmbio automático de dupla embreagem de 8 marchas</h3>
+                  <p className="text-gray-400 text-sm">Transmissão suave e eficiente com 7 modos de condução.</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 bg-sorento-gold/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                   <svg className="w-5 h-5 text-sorento-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-white font-semibold">Teto solar panorâmico</h3>
-                  <p className="text-gray-400 text-sm">Abertura elétrica com cortina e iluminação ambiente para uma experiência premium.</p>
+                  <h3 className="text-white font-semibold">Motor 2.2 turbodiesel com 194 cv</h3>
+                  <p className="text-gray-400 text-sm">Potência e torque impressionante para qualquer terreno com eficiência diesel.</p>
                 </div>
               </div>
             </div>

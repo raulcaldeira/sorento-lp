@@ -1,6 +1,7 @@
 import React from 'react';
 import logoEditoraGlobo from '../../images/logo-editora-globo.png';
 import logoGlab from '../../images/logo-glab.png';
+import { ReactComponent as LogoKia } from '../../images/logo-kia.svg';
 
 function Footer() {
   const scrollToForm = () => {
@@ -24,13 +25,11 @@ function Footer() {
               Solicitar cotação
             </button>
             <div className="w-px h-4 bg-gray-300"></div>
-            <span className="font-semibold text-sorento-graphite text-sm">KIA</span>
-            <div className="w-px h-4 bg-gray-300"></div>
-            <span className="font-semibold text-sorento-navy text-sm">GANDINI</span>
+            <LogoKia className="h-4 md:h-5 text-sorento-graphite" aria-label="Kia" />
           </div>
         </div>
         <p className="text-center text-xs text-gray-400 mt-4">
-          Conteúdo oferecido por Kia / Gandini. Produzido pelo G.lab para Editora Globo.
+          Conteúdo oferecido por Kia. Produzido pelo G.lab para Editora Globo.
         </p>
       </div>
     </footer>

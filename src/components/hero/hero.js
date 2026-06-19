@@ -62,7 +62,7 @@ function Hero() {
             </div>
 
             <p className="text-gray-300 text-lg md:text-xl mb-6 max-w-lg mx-auto">
-              Solicite agora uma cotação exclusiva com condições especiais da Gandini.
+              Solicite agora uma cotação exclusiva com condições especiais da Kia.
             </p>
 
             {/* Banner oficial da campanha */}
@@ -112,7 +112,7 @@ function Hero() {
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">Inscrição realizada!</h3>
                     <p className="text-gray-600">
-                      Em breve um consultor Gandini entrará em contato com sua cotação exclusiva do Kia Sorento.
+                      Em breve um consultor Kia entrará em contato com sua cotação exclusiva do Kia Sorento.
                     </p>
                   </div>
                 )}

@@ -16,7 +16,7 @@ function UrgencyBanner() {
               Não perca tempo!
             </h2>
             <p className="text-blue-200 text-lg max-w-xl leading-relaxed">
-              Condições especiais por tempo limitado. Solicite sua cotação agora e garanta o melhor preço do Kia Sorento na Gandini.
+              Condições especiais por tempo limitado. Solicite sua cotação agora e garanta o melhor preço do Kia Sorento.
             </p>
           </div>
           <button
