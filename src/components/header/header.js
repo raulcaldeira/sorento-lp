@@ -10,7 +10,7 @@ function Header() {
         <div className="flex items-center gap-3 sm:gap-4">
           <img src={logoEditoraGlobo} alt="Editora Globo" className="h-7 md:h-9" width="110" height="28" />
           <div className="w-px h-6 bg-gray-300" aria-hidden="true"></div>
-          <img src={logoGlab} alt="G.lab" className="h-7 md:h-9" width="36" height="36" />
+          <img src={logoGlab} alt="G.lab" className="h-7 md:h-9" width="52" height="28" />
         </div>
         <LogoKia className="h-6 md:h-8 text-sorento-graphite" aria-label="Kia" />
       </nav>

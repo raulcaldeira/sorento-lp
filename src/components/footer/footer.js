@@ -15,7 +15,7 @@ function Footer() {
           <div className="flex items-center gap-3">
             <img src={logoEditoraGlobo} alt="Editora Globo" className="h-5 md:h-6" width="78" height="20" loading="lazy" />
             <div className="w-px h-5 bg-gray-300" aria-hidden="true"></div>
-            <img src={logoGlab} alt="G.lab" className="h-5 md:h-6" width="24" height="24" loading="lazy" />
+            <img src={logoGlab} alt="G.lab" className="h-5 md:h-6" width="37" height="20" loading="lazy" />
           </div>
           <div className="flex items-center gap-4">
             <button
