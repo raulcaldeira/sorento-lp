@@ -3,12 +3,12 @@ import bannerCard from '../../images/banner-sorento-1x1.jpg';
 
 function Hero() {
   const [formSubmitted, setFormSubmitted] = useState(false);
-  const [formHeight, setFormHeight] = useState(() => window.innerWidth < 640 ? 750 : 680);
+  const [formHeight, setFormHeight] = useState(() => window.innerWidth < 640 ? 780 : 710);
   const formRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
-      setFormHeight(window.innerWidth < 640 ? 750 : 680);
+      setFormHeight(window.innerWidth < 640 ? 780 : 710);
     };
     const handleMessage = (event) => {
       if (event.data === 'form-submitted') {
