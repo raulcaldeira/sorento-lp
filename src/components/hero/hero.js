@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import bannerCard from '../../images/banner-sorento-card.gif';
+import bannerCard from '../../images/banner-sorento-1x1.jpg';
 
 function Hero() {
   const [formSubmitted, setFormSubmitted] = useState(false);
