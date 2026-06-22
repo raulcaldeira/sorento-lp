@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sorento.editoraglobo.com.br/sitemap.xml

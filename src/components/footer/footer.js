@@ -28,7 +28,7 @@ function Footer() {
             <LogoKia className="h-4 md:h-5 text-sorento-graphite" aria-label="Kia" />
           </div>
         </div>
-        <p className="text-center text-xs text-gray-400 mt-4">
+        <p className="text-center text-xs text-gray-500 mt-4">
           Conteúdo oferecido por Kia. Produzido pelo G.lab para Editora Globo.
         </p>
       </div>

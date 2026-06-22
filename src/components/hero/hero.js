@@ -41,9 +41,9 @@ function Hero() {
       </div>
 
       <div className="max-w-content mx-auto px-4 sm:px-6 py-10 md:py-16 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+        <div className="flex flex-col lg:flex-row items-center lg:items-stretch gap-8 lg:gap-12">
           {/* Left - Content */}
-          <div className="flex-1 text-center">
+          <div className="flex-1 text-center flex flex-col lg:overflow-hidden">
             <p className="text-sorento-gold font-semibold text-sm uppercase tracking-wider mb-3">
               Patrocinador Oficial FIFA World Cup 2026
             </p>
@@ -54,7 +54,7 @@ function Hero() {
 
             {/* Pricing */}
             <div className="mb-5">
-              <p className="text-gray-400 text-base line-through">De R$ 399.990<sup className="text-xs">00</sup></p>
+              <p className="text-white/60 text-base line-through">De R$ 399.990<sup className="text-xs">00</sup></p>
               <p className="text-white text-2xl sm:text-3xl font-extrabold">
                 Por R$ 359.990<sup className="text-sm font-bold">00</sup>
               </p>
@@ -66,11 +66,11 @@ function Hero() {
             </p>
 
             {/* Banner oficial da campanha */}
-            <div className="flex justify-center mb-6 lg:mb-0">
+            <div className="flex justify-center mb-6 lg:mb-0 lg:flex-1 lg:min-h-0">
               <img
                 src={bannerCard}
                 alt="Novo Kia Sorento 4x4 - Patrocinador Oficial FIFA World Cup 2026"
-                className="rounded-xl shadow-2xl ring-1 ring-white/10"
+                className="rounded-xl shadow-2xl ring-1 ring-white/10 lg:h-full lg:w-auto lg:object-contain"
               />
             </div>
           </div>
