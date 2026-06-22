@@ -14,6 +14,7 @@ function BannerStrip() {
             muted
             loop
             playsInline
+            aria-label="Vídeo do Novo Kia Sorento 4x4"
             className="w-full rounded-lg shadow-card"
           />
         </div>

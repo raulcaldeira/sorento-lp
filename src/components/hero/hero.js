@@ -35,7 +35,7 @@ function Hero() {
   return (
     <section id="hero" className="bg-gradient-to-br from-sorento-dark via-sorento-navy to-sorento-dark relative overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-10" aria-hidden="true">
         <div className="absolute top-0 right-0 w-96 h-96 bg-sorento-gold rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-400 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3"></div>
       </div>
