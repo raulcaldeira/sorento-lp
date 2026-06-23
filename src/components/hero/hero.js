@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import bannerCard from '../../images/banner-sorento-1x1.jpg';
+import videoSorento from '../../images/sorento-video-1x1.mp4';
 
 function Hero() {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -33,7 +34,7 @@ function Hero() {
   }, []);
 
   return (
-    <section id="hero" className="bg-gradient-to-br from-sorento-dark via-sorento-navy to-sorento-dark relative overflow-hidden">
+    <section id="hero" className="bg-gradient-to-br from-sorento-dark via-sorento-navy to-sorento-dark relative overflow-clip">
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-10" aria-hidden="true">
         <div className="absolute top-0 right-0 w-96 h-96 bg-sorento-gold rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
@@ -43,7 +44,7 @@ function Hero() {
       <div className="max-w-content mx-auto px-4 sm:px-6 py-10 md:py-16 relative z-10">
         <div className="flex flex-col lg:flex-row items-center lg:items-stretch gap-8 lg:gap-12">
           {/* Left - Content */}
-          <div className="flex-1 text-center flex flex-col lg:overflow-hidden">
+          <div className="flex-1 text-center flex flex-col lg:overflow-hidden min-h-0">
             <p className="text-sorento-gold font-semibold text-sm uppercase tracking-wider mb-3">
               Patrocinador Oficial FIFA World Cup 2026
             </p>
@@ -61,16 +62,29 @@ function Hero() {
               <p className="text-sorento-gold text-sm font-medium mt-1">Economia de R$ 40.000</p>
             </div>
 
-            <p className="text-gray-300 text-lg md:text-xl mb-6 max-w-lg mx-auto">
-              Solicite agora uma cotação exclusiva com condições especiais da Kia.
-            </p>
+            {/* CTA mobile - guia até o form */}
+            <button
+              onClick={() => {
+                const el = document.getElementById('formulario');
+                const top = el.getBoundingClientRect().top + window.scrollY - 24;
+                window.scrollTo({ top, behavior: 'smooth' });
+              }}
+              className="lg:hidden bg-sorento-gold text-sorento-dark font-semibold px-6 py-2.5 rounded-lg hover:bg-sorento-gold-dark transition-all text-sm shadow-md cursor-pointer mb-4"
+            >
+              Solicitar cotação
+            </button>
 
-            {/* Banner oficial da campanha */}
-            <div className="flex justify-center mb-6 lg:mb-0 lg:flex-1 lg:min-h-0">
-              <img
-                src={bannerCard}
-                alt="Novo Kia Sorento 4x4 - Patrocinador Oficial FIFA World Cup 2026"
-                className="rounded-xl shadow-2xl ring-1 ring-white/10 lg:h-full lg:w-auto lg:object-contain"
+            {/* Vídeo do Sorento */}
+            <div className="flex justify-center mb-4 lg:mb-0 lg:flex-1 lg:min-h-0">
+              <video
+                src={videoSorento}
+                poster={bannerCard}
+                autoPlay
+                muted
+                loop
+                playsInline
+                aria-label="Vídeo do Novo Kia Sorento 4x4"
+                className="rounded-xl shadow-2xl ring-1 ring-white/10 max-w-[280px] lg:max-w-none lg:h-full lg:w-auto lg:object-contain"
               />
             </div>
           </div>
@@ -81,7 +95,7 @@ function Hero() {
             id="formulario"
             className="w-full max-w-md lg:max-w-lg flex-shrink-0 scroll-mt-6"
           >
-            <div className="bg-white rounded-2xl shadow-2xl">
+            <div className="bg-white rounded-2xl shadow-2xl h-full flex flex-col">
               <div className="bg-sorento-navy px-6 py-4">
                 <h2 className="text-white text-xl font-bold text-center">
                   {formSubmitted ? 'Obrigado!' : 'Solicite sua cotação'}
@@ -93,7 +107,7 @@ function Hero() {
                 )}
               </div>
 
-              <div className="p-1">
+              <div className="p-1 flex-1">
                 {!formSubmitted ? (
                   <iframe
                     src="https://mchyb-7yzb-g12z8ttz9nhyzyck1.pub.sfmc-content.com/lgaoqq2ywtl"
