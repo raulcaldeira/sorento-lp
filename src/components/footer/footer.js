@@ -13,9 +13,9 @@ function Footer() {
       <div className="max-w-content mx-auto px-4 sm:px-6 py-6">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <img src={logoEditoraGlobo} alt="Editora Globo" className="h-5 md:h-6" width="78" height="20" loading="lazy" />
+            <img src={logoEditoraGlobo} alt="Editora Globo" className="h-5 md:h-6 w-auto" loading="lazy" />
             <div className="w-px h-5 bg-gray-300" aria-hidden="true"></div>
-            <img src={logoGlab} alt="G.lab" className="h-5 md:h-6" width="37" height="20" loading="lazy" />
+            <img src={logoGlab} alt="G.lab" className="h-5 md:h-6 w-auto" loading="lazy" />
           </div>
           <div className="flex items-center gap-4">
             <button
