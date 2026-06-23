@@ -75,7 +75,7 @@ function Hero() {
             </button>
 
             {/* Vídeo do Sorento */}
-            <div className="flex justify-center mb-4 lg:mb-0 lg:flex-1 lg:min-h-0">
+            <div className="flex justify-center mb-4 lg:mb-0 lg:flex-1 lg:min-h-0 lg:overflow-hidden">
               <video
                 src={videoSorento}
                 poster={bannerCard}
@@ -84,7 +84,7 @@ function Hero() {
                 loop
                 playsInline
                 aria-label="Vídeo do Novo Kia Sorento 4x4"
-                className="rounded-xl shadow-2xl ring-1 ring-white/10 max-w-[280px] lg:max-w-none lg:h-full lg:w-auto lg:object-contain"
+                className="rounded-xl shadow-2xl ring-1 ring-white/10 max-w-[280px] lg:max-w-none lg:h-full lg:w-full lg:object-cover"
               />
             </div>
           </div>
@@ -95,7 +95,7 @@ function Hero() {
             id="formulario"
             className="w-full max-w-md lg:max-w-lg flex-shrink-0 scroll-mt-6"
           >
-            <div className="bg-white rounded-2xl shadow-2xl h-full flex flex-col">
+            <div className="bg-white rounded-2xl shadow-2xl lg:h-full">
               <div className="bg-sorento-navy px-6 py-4">
                 <h2 className="text-white text-xl font-bold text-center">
                   {formSubmitted ? 'Obrigado!' : 'Solicite sua cotação'}
@@ -107,7 +107,7 @@ function Hero() {
                 )}
               </div>
 
-              <div className="p-1 flex-1">
+              <div className="p-1">
                 {!formSubmitted ? (
                   <iframe
                     src="https://mchyb-7yzb-g12z8ttz9nhyzyck1.pub.sfmc-content.com/lgaoqq2ywtl"
