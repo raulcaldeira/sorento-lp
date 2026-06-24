@@ -1,6 +1,6 @@
 import React from 'react';
 import logoEditoraGlobo from '../../images/logo-editora-globo.png';
-import logoGlab from '../../images/logo-glab.png';
+import logoAutoesporte from '../../images/logo-autoesporte.svg';
 import { ReactComponent as LogoKia } from '../../images/logo-kia.svg';
 
 function Footer() {
@@ -15,7 +15,7 @@ function Footer() {
           <div className="flex items-center gap-3">
             <img src={logoEditoraGlobo} alt="Editora Globo" className="h-5 md:h-6 w-auto" loading="lazy" />
             <div className="w-px h-5 bg-gray-300" aria-hidden="true"></div>
-            <img src={logoGlab} alt="G.lab" className="h-5 md:h-6 w-auto" loading="lazy" />
+            <img src={logoAutoesporte} alt="Autoesporte" className="h-5 md:h-6 w-auto" loading="lazy" />
           </div>
           <div className="flex items-center gap-4">
             <button
@@ -29,7 +29,7 @@ function Footer() {
           </div>
         </div>
         <p className="text-center text-xs text-gray-500 mt-4">
-          Conteúdo oferecido por Kia. Produzido pelo G.lab para Editora Globo.
+          Conteúdo oferecido por Kia. Produzido pelo Autoesporte para Editora Globo.
         </p>
       </div>
     </footer>
