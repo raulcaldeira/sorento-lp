@@ -54,9 +54,9 @@ function Hero() {
             <div className="mb-5">
               <p className="text-white/60 text-base line-through">De R$ 399.990<sup className="text-xs">00</sup></p>
               <p className="text-white text-2xl sm:text-3xl font-extrabold">
-                Por R$ 359.990<sup className="text-sm font-bold">00</sup>
+                Por R$ 344.990<sup className="text-sm font-bold">00</sup>
               </p>
-              <p className="text-sorento-gold text-sm font-medium mt-1">Economia de R$ 40.000</p>
+              <p className="text-sorento-gold text-sm font-medium mt-1">Economia de R$ 55.000</p>
             </div>
 
             {/* CTA mobile - guia até o form */}
@@ -81,7 +81,7 @@ function Hero() {
                 loop
                 playsInline
                 aria-label="Vídeo do Novo Kia Sorento 4x4"
-                className="rounded-xl shadow-2xl ring-1 ring-white/10 max-w-[280px] lg:max-w-none lg:h-full lg:w-full lg:object-cover"
+                className="rounded-xl shadow-2xl ring-1 ring-white/10 max-w-[280px] lg:max-w-none lg:max-h-[710px] lg:w-full lg:object-cover"
               />
             </div>
           </div>
