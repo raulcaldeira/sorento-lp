@@ -4,12 +4,12 @@ import videoSorento from '../../images/sorento-video-novo.mp4';
 
 function Hero() {
   const [formSubmitted, setFormSubmitted] = useState(false);
-  const [formHeight, setFormHeight] = useState(() => window.innerWidth < 640 ? 780 : 710);
+  const [formHeight, setFormHeight] = useState(() => window.innerWidth < 640 ? 780 : 670);
   const formRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
-      setFormHeight(window.innerWidth < 640 ? 780 : 710);
+      setFormHeight(window.innerWidth < 640 ? 780 : 670);
     };
     const handleMessage = (event) => {
       if (event.data === 'form-submitted') {
@@ -81,7 +81,7 @@ function Hero() {
                 loop
                 playsInline
                 aria-label="Vídeo do Novo Kia Sorento 4x4"
-                className="rounded-xl shadow-2xl ring-1 ring-white/10 max-w-[280px] lg:max-w-none lg:max-h-[710px] lg:w-full lg:object-cover"
+                className="rounded-xl shadow-2xl ring-1 ring-white/10 max-w-[280px] lg:max-w-none lg:max-h-[460px] lg:w-full lg:object-cover"
               />
             </div>
           </div>
