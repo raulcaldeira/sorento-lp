@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import bannerCard from '../../images/banner-sorento-1x1.jpg';
-import videoSorento from '../../images/sorento-video-1x1.mp4';
+import videoSorento from '../../images/sorento-video-novo.mp4';
 
 function Hero() {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -45,9 +45,6 @@ function Hero() {
         <div className="flex flex-col lg:flex-row items-center lg:items-stretch gap-8 lg:gap-12">
           {/* Left - Content */}
           <div className="flex-1 text-center flex flex-col lg:overflow-hidden min-h-0">
-            <p className="text-sorento-gold font-semibold text-sm uppercase tracking-wider mb-3">
-              Patrocinador Oficial FIFA World Cup 2026
-            </p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight mb-4">
               Chegou o Novo{' '}
               <span className="text-sorento-gold">Kia Sorento 4x4.</span>

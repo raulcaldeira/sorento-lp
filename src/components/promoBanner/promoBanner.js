@@ -1,5 +1,5 @@
 import React from 'react';
-import bannerTall from '../../images/banner-sorento-9x16.jpg';
+import bannerTall from '../../images/sorento-promo-9x16.gif';
 
 function PromoBanner() {
   const scrollToForm = () => {
