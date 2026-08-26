@@ -3,12 +3,12 @@ import gifSorento from '../../images/sorento-promo-9x16.gif';
 
 function Hero() {
   const [formSubmitted, setFormSubmitted] = useState(false);
-  const [formHeight, setFormHeight] = useState(() => window.innerWidth < 640 ? 780 : 670);
+  const [formHeight, setFormHeight] = useState(() => window.innerWidth < 640 ? 780 : 720);
   const formRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
-      setFormHeight(window.innerWidth < 640 ? 780 : 670);
+      setFormHeight(window.innerWidth < 640 ? 780 : 720);
     };
     const handleMessage = (event) => {
       if (event.data === 'form-submitted') {
