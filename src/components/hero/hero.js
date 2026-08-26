@@ -79,7 +79,7 @@ function Hero() {
                 loop
                 playsInline
                 aria-label="Novo Kia Sorento 4x4"
-                className="rounded-xl shadow-2xl ring-1 ring-white/10 max-w-[260px] lg:max-w-[300px] h-auto"
+                className="rounded-xl max-w-[260px] lg:max-w-[300px] h-auto"
               />
             </div>
           </div>
