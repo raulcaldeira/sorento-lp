@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import gifSorento from '../../images/sorento-promo-9x16.gif';
+import videoSorento from '../../images/sorento-video-novo.mp4';
 
 function Hero() {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -70,11 +70,15 @@ function Hero() {
               Solicitar cotação
             </button>
 
-            {/* GIF do Sorento */}
+            {/* Vídeo do Sorento */}
             <div className="flex justify-center mb-4 lg:mb-0 lg:flex-1 lg:min-h-0 lg:overflow-hidden">
-              <img
-                src={gifSorento}
-                alt="Novo Kia Sorento 4x4"
+              <video
+                src={videoSorento}
+                autoPlay
+                muted
+                loop
+                playsInline
+                aria-label="Novo Kia Sorento 4x4"
                 className="rounded-xl shadow-2xl ring-1 ring-white/10 max-w-[260px] lg:max-w-[300px] h-auto"
               />
             </div>
