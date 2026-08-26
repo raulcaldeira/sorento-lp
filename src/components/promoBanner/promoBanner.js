@@ -1,5 +1,5 @@
 import React from 'react';
-import bannerTall from '../../images/sorento-promo-9x16.gif';
+import videoSorento from '../../images/sorento-video-novo.mp4';
 
 function PromoBanner() {
   const scrollToForm = () => {
@@ -11,12 +11,16 @@ function PromoBanner() {
       <div className="max-w-content mx-auto px-4 sm:px-6">
         {/* Content + Banner tall */}
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-          {/* Banner tall */}
+          {/* Vídeo do Sorento */}
           <div className="flex-shrink-0">
-            <img
-              src={bannerTall}
-              alt="Novo Kia Sorento 4x4 - De R$ 399.990 por R$ 359.990"
-              className="rounded-xl shadow-2xl max-w-[250px] mx-auto"
+            <video
+              src={videoSorento}
+              autoPlay
+              muted
+              loop
+              playsInline
+              aria-label="Novo Kia Sorento 4x4"
+              className="rounded-xl shadow-2xl max-w-[280px] mx-auto"
             />
           </div>
 
